@@ -28,6 +28,61 @@ body {
 	background: var(--primary);
 	font-family: 'Montserrat Bold', sans-serif;
 }
+.payment-methods {
+	display: flex;
+	align-items: center;
+	gap: 16px;
+	margin-bottom: 24px;
+}
+
+.payment-methods__text {
+	color: #9ca3af;
+	font-size: 14px;
+	white-space: nowrap;
+}
+
+.payment-methods__logos {
+	display: flex;
+	align-items: center;
+	flex-wrap: nowrap;
+	gap: 12px;
+}
+
+.payment-methods__logo {
+	width: 80px;
+	height: 40px;
+	flex-shrink: 0;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	overflow: hidden;
+	background-color: #fff;
+	border-radius: 4px;
+}
+
+.payment-methods__logo img {
+	display: block;
+	max-width: 100%;
+	max-height: 100%;
+	width: auto;
+	height: auto;
+	object-fit: contain;
+}
+
+@media (max-width: 480px) {
+	.payment-methods {
+		gap: 10px;
+	}
+
+	.payment-methods__logos {
+		gap: 6px;
+	}
+
+	.payment-methods__logo {
+		width: 58px;
+		height: 34px;
+	}
+}
 
 a {
 	color: var(--highlight)
